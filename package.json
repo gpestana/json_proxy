@@ -1,0 +1,30 @@
+{
+  "name": "json_proxy",
+  "version": "0.0.1",
+  "description": "proxy server that parses any API results to JSON ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint **.js",
+    "start": "npm run lint && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpestana/json_proxy.git"
+  },
+  "author": "gpestana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpestana/json_proxy/issues"
+  },
+  "homepage": "https://github.com/gpestana/json_proxy",
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.65.0",
+    "xml2json": "^0.9.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1-rc1",
+    "nodemon": "^1.8.1"
+  }
+}
