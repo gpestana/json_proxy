@@ -5,11 +5,10 @@ var PORT = 3000;
 var app = express();
 
 
-app.get('/goodreads', function(req, res){
-	//HTTP request to goodreads won't be hardcoded. for trying out only
-	var ex_req = 'https://www.goodreads.com/author/show.xml?id=18541'
-
-	services.goodreads(ex_req, function(data){
+app.get('/proxy', function(req, res){
+	var r = req.query.r;
+	
+	services.proxy(r, function(data){
 		res.send(data);
 	});
 });

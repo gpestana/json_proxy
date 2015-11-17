@@ -9,3 +9,16 @@ The purpose is to create a webservice that makes API requests to registered endo
 	3. <Goodreads> send response back to <Proxy>
 	4. <Proxy> parsed the response
 	5. <Proxy> sends JSON parsed response to <User>
+
+
+###Usage:
+
+**1. Run webservice**
+```
+$npm run
+```
+
+**2. Make a request with the API request**
+```
+$ curl localhost:3000/proxy?r=https://www.goodreads.com/author/show.xml?id=18541
+```
